@@ -172,7 +172,7 @@ load("gradescope", function (value) {
  */
 
 const quote = document.getElementById("random-quote");
-const staticUrl = "https://aidenjohnson.dev/Hosts/help-me-bevo-quotes.json";
+const staticUrl = "https://maguireyounes.com/Hosts/help-me-nittany-lion-quotes.json";
 fetch(staticUrl)
   .then((response) => {
     if (!response.ok) {
