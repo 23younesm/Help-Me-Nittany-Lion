@@ -96,8 +96,8 @@ a {
   height: 24px;
   border: 0;
   cursor: pointer;
-  background-color: #bf5700;
-  accent-color: #bf5700;
+  background-color: #041E42 ;
+  accent-color: #041E42 ;
 }
 
 .slider::-moz-range-thumb {
@@ -105,8 +105,8 @@ a {
   height: 25px;
   border: 0;
   cursor: pointer;
-  background-color: #bf5700;
-  accent-color: #bf5700;
+  background-color: #041E42;
+  accent-color: #041E42;
 }
 
 .centered {
@@ -130,8 +130,7 @@ a {
   width: 0;
   height: 0;
 }
-
-/* The slider */
+/* The toggle slider container */
 .toggleslider {
   position: absolute;
   cursor: pointer;
@@ -139,11 +138,12 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #ccc;  /* Default grey background */
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
+/* The toggle slider circle (thumb) */
 .toggleslider:before {
   position: absolute;
   content: "";
@@ -151,26 +151,29 @@ a {
   width: 15px;
   left: 3.5px;
   bottom: 2.8px;
-  background-color: white;
+  background-color: white;  /* White thumb */
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
+/* When the input is checked, change the background color to PSU blue */
 input:checked + .toggleslider {
-  background-color: #bf5700;
+  background-color: #041E42;
 }
 
+/* Add a focus effect on the toggle slider */
 input:focus + .toggleslider {
-  box-shadow: 0 0 1px #bf5700;
+  box-shadow: 0 0 1px #041E42;
 }
 
+/* Move the slider thumb to the right when checked */
 input:checked + .toggleslider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
 }
 
-/* Rounded sliders */
+/* Optional: Make the toggle slider rounded */
 .toggleslider.round {
   border-radius: 34px;
 }

@@ -23,7 +23,7 @@
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: #041E42;
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -77,7 +77,7 @@
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: #041E42;
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -768,68 +768,68 @@ video {
 }
 
 .from-orange-500\/20 {
-  --tw-gradient-from: rgb(249 115 22 / 0.2) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-slate-900 {
-  --tw-gradient-from: #0f172a var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(15 23 42 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500\/80 {
-  --tw-gradient-from: rgb(249 115 22 / 0.8) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500 {
-  --tw-gradient-from: #f97316 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500\/10 {
-  --tw-gradient-from: rgb(249 115 22 / 0.1) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500\/100 {
-  --tw-gradient-from: rgb(249 115 22 / 1) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500\/\[\.10\] {
-  --tw-gradient-from: rgb(249 115 22 / .10) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-100\/\[\.10\] {
-  --tw-gradient-from: rgb(255 237 213 / .10) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(255 237 213 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-900\/\[\.10\] {
-  --tw-gradient-from: rgb(124 45 18 / .10) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(124 45 18 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500\/25 {
-  --tw-gradient-from: rgb(249 115 22 / 0.25) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-orange-500\/15 {
-  --tw-gradient-from: rgb(249 115 22 / 0.15) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-from: #041E42 var(--tw-gradient-from-position);
+  --tw-gradient-to: #041e4200 var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -842,31 +842,31 @@ video {
 }
 
 .to-orange-500\/50 {
-  --tw-gradient-to: rgb(249 115 22 / 0.5) var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .to-orange-500\/100 {
-  --tw-gradient-to: rgb(249 115 22 / 1) var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .to-orange-500\/5 {
-  --tw-gradient-to: rgb(249 115 22 / 0.05) var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .to-orange-500 {
-  --tw-gradient-to: #f97316 var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .to-orange-500\/15 {
-  --tw-gradient-to: rgb(249 115 22 / 0.15) var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .to-orange-500\/10 {
-  --tw-gradient-to: rgb(249 115 22 / 0.1) var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .to-orange-500\/0 {
-  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-to: #041E42 var(--tw-gradient-to-position);
 }
 
 .p-4 {
@@ -988,7 +988,7 @@ video {
 }
 
 .accent-\[\#bf5700\] {
-  accent-color: #bf5700;
+  accent-color: #041E42;
 }
 
 .opacity-75 {
@@ -1111,8 +1111,8 @@ a {
   height: 24px;
   border: 0;
   cursor: pointer;
-  background-color: #bf5700;
-  accent-color: #bf5700;
+  background-color: #041E42;
+  accent-color: #041E42;
 }
 
 .slider::-moz-range-thumb {
@@ -1120,8 +1120,8 @@ a {
   height: 25px;
   border: 0;
   cursor: pointer;
-  background-color: #bf5700;
-  accent-color: #bf5700;
+  background-color: #041E42;
+  accent-color: #041E42;
 }
 
 .centered {
@@ -1167,16 +1167,16 @@ a {
   width: 15px;
   left: 3.5px;
   bottom: 2.8px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: 0.4s;
 }
 
 input:checked + .toggleslider {
-  background-color: #bf5700;
+  background-color: #041E42;
 }
 
 input:focus + .toggleslider {
-  box-shadow: 0 0 1px #bf5700;
+  box-shadow: 0 0 1px #041E42;
 }
 
 input:checked + .toggleslider:before {
