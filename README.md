@@ -41,10 +41,4 @@ These instructions are for installing via the ZIP file from the GitHub release <
 
 ## Credit
 
-Thank you to Aidan Johnson for the code!
-
-Credits to the UT media team for the animation.
-
-Thank you @EthanL06 for the design of the extension popup.
-
-Hook 'em!
+Thank you to Aiden Johnson for the code!
