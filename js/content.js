@@ -1,5 +1,5 @@
-const videoURL = "https://aidenjohnson.dev/Images/Bevo.mp4";
-const fullVideoURL = "https://aidenjohnson.dev/Images/BevoCrop.mp4";
+const videoURL = "https://maguireyounes.com/nittany.mp4";
+const fullVideoURL = "https://maguireyounes.com/nittany.mp4";
 const name = "Help Me Bevo"; // Name of Extension
 const debug = false;
 var volume = 0.5;
