@@ -5,7 +5,7 @@ A extension to see the <i>infamous</i> Nittany Lion when you submit a Canvas ass
 Tired of being demotivated to get assignments done?
 Let the Nittany Lion take that burden away, and see his infamous 3rd down animation (the OG one) every time you submit a Canvas assignment.
 
-![Extension Image](https://lh3.googleusercontent.com/nV0uRjXJ9PRps2P3YY9rYKPUT-yYxGjKgwpmO6njmjV1kXdv4rJNr6LxXtz1gRBOB1eKHVyj6CPcpI_Kf791uBfV1jw=s1280-w1280-h800)
+![Extension Image](https://lh3.googleusercontent.com/nV0uRjXJ9PRps2P3YY9rYKPUT-yYxGjKgwpmO6njmjV1kXdv4rJNr6LxXtz1gRBOB1eKHVyj6CPcpI_Kf791uBfV1jw=s1280-w1280-h800](https://cdn.vox-cdn.com/thumbor/5EQ0J79-kN3gGEGw-zS_rc2oM3s=/0x0:904x490/1200x0/filters:focal(0x0:904x490):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19591279/1325_h.jpg))
 
 ## Features
 
