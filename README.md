@@ -5,7 +5,7 @@ A extension to see the <i>infamous</i> Nittany Lion when you submit a Canvas ass
 Tired of being demotivated to get assignments done?
 Let the Nittany Lion take that burden away, and see his infamous 3rd down animation (the OG one) every time you submit a Canvas assignment.
 
-![Extension Image]([https://www.buckys5thquarter.com/2020/1/11/21059392/why-your-mascot-sucks-penn-state-university-nittany-lions](https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/Penn-State-mascot-1629995943.jpg))
+![Extension Image](https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/Penn-State-mascot-1629995943.jpg)
 
 ## Features
 
