@@ -1,15 +1,15 @@
-# Help Me Bevo
+# Help Me Nittany Lion
 
-A extension to see the <i>infamous</i> Bevo 3rd down animation when you submit a Canvas assignment!
+A extension to see the <i>infamous</i> Nittany Lion when you submit a Canvas assignment!
 
 Tired of being demotivated to get assignments done?
-Let Bevo take that burden away, and see his infamous 3rd down animation (the OG one) every time you submit a Canvas assignment.
+Let the Nittany Lion take that burden away, and see his infamous 3rd down animation (the OG one) every time you submit a Canvas assignment.
 
 ![Extension Image](https://lh3.googleusercontent.com/nV0uRjXJ9PRps2P3YY9rYKPUT-yYxGjKgwpmO6njmjV1kXdv4rJNr6LxXtz1gRBOB1eKHVyj6CPcpI_Kf791uBfV1jw=s1280-w1280-h800)
 
 ## Features
 
-- See the infamous Bevo 3rd down animation every time you submit a Canvas assignment!
+- See the infamous Nittany Lion every time you submit a Canvas assignment!
 - Automatic Saved Settings
 - Settings:
   - Enable/Disable Extension
@@ -23,15 +23,6 @@ Let Bevo take that burden away, and see his infamous 3rd down animation (the OG 
   - Full Screen Mode
 - Random UT Theme Quote
 - Tailwind CSS
-
-## Link to Extension:
-
-<b>Chromium Browsers: </b>https://chromewebstore.google.com/detail/help-me-bevo/igepffgmogjaehnlpgepliimadegcapd
-<br />
-<b>Firefox:</b> https://addons.mozilla.org/en-US/firefox/addon/help-me-bevo/
-<br />
-<br />
-[You can view all chromium browsers here](<https://en.wikipedia.org/wiki/Chromium_(web_browser)>)
 
 ## Release Installation
 
@@ -50,8 +41,7 @@ These instructions are for installing via the ZIP file from the GitHub release <
 
 ## Credit
 
-Thank you to the YikYak community for originally suggesting this idea!
-The idea originally came from YikYak, and it was upvoted a ton. I needed to work on some side projects, so it was the perfect opportunity to create an extension. Not only build my portfolio but also please the UT students (and of course for the assignment motivation).
+Thank you to Aidan Johnson for the code!
 
 Credits to the UT media team for the animation.
 
