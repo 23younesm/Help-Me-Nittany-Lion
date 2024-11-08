@@ -5,19 +5,29 @@
     "manifest_version": 3,
     "author": "Maguire Younes",
     "action": {
-        "default_popup": "index.html",
+        "default_popup": "html/index.html",
         "default_title": "Help Me Nittany Lion",
         "default_icon": {
-            "16": "./Images/icon16.png",
-            "32": "./Images/icon32.png",
-            "48": "./Images/icon48.png",
-            "128": "./Images/icon128.png"
+            "16": "Images/icon16.png",
+            "32": "Images/icon32.png",
+            "48": "Images/icon48.png",
+            "128": "Images/icon128.png"
         }
     },
     "permissions": [
         "activeTab",
-        "storage"
+        "storage",
+        "tabs",
+        "scripting"
     ],
+    "host_permissions": [
+        "https://*.instructure.com/*",
+        "https://www.gradescope.com/*",
+        "https://classroom.google.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
     "content_scripts": [
         {
             "matches": [
@@ -25,14 +35,14 @@
                 "https://www.gradescope.com/*",
                 "https://classroom.google.com/*"
             ],
-            "js": ["content.js"],
-            "css": ["styles.css"]
+            "js": ["js/content.js", "js/script.js"],
+            "css": ["styles/input.css", "styles/output.css"]
         }
     ],
     "icons": {
-        "16": "./Images/icon16.png",
-        "32": "./Images/icon32.png",
-        "48": "./Images/icon48.png",
-        "128": "./Images/icon128.png"
+        "16": "Images/icon16.png",
+        "32": "Images/icon32.png",
+        "48": "Images/icon48.png",
+        "128": "Images/icon128.png"
     }
 }
