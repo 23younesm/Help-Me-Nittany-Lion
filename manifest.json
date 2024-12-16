@@ -16,18 +16,16 @@
     },
     "permissions": [
         "activeTab",
-        "storage",
-        "tabs",
-        "scripting"
+        "storage"
     ],
     "host_permissions": [
         "https://*.instructure.com/*",
         "https://www.gradescope.com/*",
         "https://classroom.google.com/*"
     ],
-    "background": {
-        "service_worker": "background.js"
-    },
+    "background": 
+        [ "background.js" 
+    ],
     "content_scripts": [
         {
             "matches": [
