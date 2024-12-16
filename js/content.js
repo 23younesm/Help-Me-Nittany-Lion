@@ -1,6 +1,7 @@
 const videoURL = "https://maguireyounes.com/nittany.mp4";
 const fullVideoURL = "https://maguireyounes.com/nittany.mp4";
-const name = "Help Me Bevo"; // Name of Extension
+const themedVideoURL = "https://maguireyounes.com/nittany.mp4";
+const name = "Help Me Nittany"; // Name of Extension
 const debug = false;
 var volume = 0.5;
 
@@ -17,14 +18,44 @@ const overlayHTML = `
   </div>
 `;
 
+let videoDiv;
+let videoOverlay;
+let video;
+let skip;
+
+let injected = false;
+function injectVideo() {
+  if (injected) return;
+
 const overlayElement = document.createElement("div");
 overlayElement.innerHTML = overlayHTML;
 document.body.appendChild(overlayElement);
 
-const videoDiv = document.getElementById("volumeDiv");
-const videoOverlay = document.getElementById("video-overlay");
-const video = document.getElementById("video");
-const skip = document.getElementById("skip-button");
+videoDiv = document.getElementById("volumeDiv");
+videoOverlay = document.getElementById("video-overlay");
+video = document.getElementById("video");
+skip = document.getElementById("skip-button");
+
+video.addEventListener("ended", () => {
+  videoOverlay.classList.remove("show-nittany");
+  setPlaying(false);
+
+  video.muted = false;
+});
+
+skip.addEventListener("click", () => {
+  video.pause();
+  video.currentTime = 0;
+  videoOverlay.classList.remove("show-nittany");
+  setPlaying(false);
+});
+
+injected = true;
+
+console.log("Injected video");
+}
+
+var eventButtons = [];
 
 var enabled = true;
 var assignments = true;
@@ -35,6 +66,7 @@ var fullScreen = true;
 var classroom = true;
 var gradescope = true;
 var playing = false;
+var themedAnims = true;
 
 /**
  * LOAD SETTINGS
@@ -83,11 +115,15 @@ load("playing", null, function (value) {
   const type = value[2];
 
   if (wasPlaying && Date.now() / 1000 - time < 4) {
+    injectVideo();
     video.muted = true;
-    displayBevo(type);
+    displaynittany(type, true);
   } else if (wasPlaying) {
     save("playing", null);
   }
+});
+load("themedAnims", true, function (value) {
+  themedAnims = value;
 });
 
 /**
@@ -95,7 +131,7 @@ load("playing", null, function (value) {
  */
 
 const listenerFuncs = {
-  play: displayBevo,
+  play: displaynittany,
   print: log,
   updateVolume: updateVolume,
   toggle: toggle,
@@ -105,13 +141,6 @@ const listenerFuncs = {
 
 document.addEventListener("click", () => {
   if (!playing) return;
-
-  video.muted = false;
-});
-
-video.addEventListener("ended", () => {
-  videoOverlay.classList.remove("show-bevo");
-  setPlaying(false);
 
   video.muted = false;
 });
@@ -126,13 +155,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     console.log(request);
   }
 });
-
-skip.addEventListener("click", () => {
-  video.pause()
-  video.currentTime = 0;
-  videoOverlay.classList.remove("show-bevo");
-  setPlaying(false);
-})
 
 /**
  * ATTACHING TO BUTTONS
@@ -175,7 +197,10 @@ const callback = (mutationList, observer) => {
               initButton(button, "assignments");
             } else if (isSubmitButton(button, true, "other")) {
               initButton(button, "other");
-            } else if (isSubmitButton(button, true, "gradescope")) {
+            } else if (
+              isSubmitButton(button, true, "gradescope") &&
+              window.location.href.includes("gradescope")
+            ) {
               initButton(button, "gradescope"); 
             } else if (
               button.parentElement.classList.contains(
@@ -212,18 +237,28 @@ function changeValue(data) {
   switch (variable) {
     case "assignments":
       assignments = value;
+      break;
     case "quizzes":
       quizzes = value;
+      break;
     case "discussions":
       discussions = value;
+      break;
     case "other":
       other = value;
+      break;
     case "fullScreen":
       fullScreen = value;
+      break;
     case "classroom":
       classroom = value;
+      break;
     case "gradescope":
       gradescope = value;
+      break;
+    case "themedAnims":
+      themedAnims = value;
+      break;
   }
 }
 
@@ -261,26 +296,43 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(value, max));
 }
 
-function displayBevo(type) {
+async function displaynittany(type, skipAnalytics) {
   if (!enabled || playing) return;
   if (type == "assignments" && !assignments) return;
   if (type == "quizzes" && !quizzes) return;
   if (type == "discussions" && !discussions) return;
   if (type == "other" && !other) return;
 
+  console.log(type);
+
   video.style.width = fullScreen ? "100%" : "90%";
 
-  video.src = fullScreen ? fullVideoURL : videoURL;
+  var URL = fullScreen ? fullVideoURL : videoURL;
+  if (!themedAnims) {
+    URL = fullScreen ? fullVideoURL : videoURL;
+  } else {
+    const isValid = await isValidVideo(themedVideoURL);
+
+    if (isValid) {
+      URL = themedVideoURL;
+    }
+
+    console.log("Themed video " + (isValid ? "exists" : "doesn't exist"));
+  }
+
+  video.src = URL;
   video.pause();
 
   setPlaying(true, type);
 
   setTimeout(() => {
-    videoOverlay.classList.add("show-bevo");
+    videoOverlay.classList.add("show-nittany");
     video.play();
 
-    analyticSend("bevo");
+    if (!skipAnalytics) {
+    analyticSend("nittany");
     analyticSend(type);
+    }
   }, 100);
 }
 
@@ -298,7 +350,7 @@ function updateVolume(value) {
   value = value[1];
   volume = clamp(value, 0, 1);
 
-  video.volume = volume;
+  if (video != null) video.volume = volume;
 }
 
 function toggle(value) {
@@ -307,10 +359,36 @@ function toggle(value) {
   enabled = value;
 }
 
+function isValidVideo(url) {
+  // First, check if the URL ends with .mp4
+  if (!url.toLowerCase().endsWith(".mp4")) {
+    return false;
+  }
+
+  // Create a video element to check if the video can be loaded
+  const video = document.createElement("video");
+  video.src = url;
+
+  return new Promise((resolve) => {
+    // Add an event listener for video load success
+    video.onloadeddata = () => {
+      resolve(true); // Valid video
+    };
+
+    // Add an event listener for video load failure
+    video.onerror = () => {
+      resolve(false); // Invalid video
+    };
+  });
+}
+
 function initButton(button, type) {
-  if (button != null) {
+  if (button != null && !eventButtons.includes(button)) {
+    injectVideo();
+
+    eventButtons.push(button);
     button.addEventListener("click", () => {
-      displayBevo(type);
+      displaynittany(type);
     });
   }
 
